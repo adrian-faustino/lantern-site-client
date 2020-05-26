@@ -10,38 +10,17 @@ import {
 import { AboutUs, ContactUs, FutureEvents, Home, Photos } from './views';
 
 // components
-import { Footer } from './components';
-
-// react-strap
-import { Button, Nav, NavItem, NavLink } from 'reactstrap';
+import { Footer, NavBar } from './components';
 
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <nav>
-        <Nav vertical>
-          <NavItem>
-          <NavLink href="/">Home</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/about-us">About Us</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/photos">Photos</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/future-events">Future Events</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/contact-us">Contact Us</NavLink>
-          </NavItem>
-          <NavItem>
-            <Button color="info">Donate</Button>
-          </NavItem>
-        </Nav>
-      </nav>
+
+
+      <NavBar />
+      
 
       {/* Switch */}
       <Switch>
