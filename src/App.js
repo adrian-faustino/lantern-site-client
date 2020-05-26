@@ -9,6 +9,9 @@ import {
 // views
 import { AboutUs, ContactUs, FutureEvents, Home, Photos } from './views';
 
+// components
+import { Footer } from './components';
+
 import './App.css';
 
 function App() {
@@ -31,6 +34,9 @@ function App() {
           <li>
             <Link to="/contact-us">Users</Link>
           </li>
+          <li>
+            <button>Donate</button>
+          </li>
         </ul>
       </nav>
 
@@ -52,6 +58,11 @@ function App() {
           <Home />
         </Route>
       </Switch>
+
+  
+      <Footer />
+
+
     </Router>
   );
 }
