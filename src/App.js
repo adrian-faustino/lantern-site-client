@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 // views
-
+import { AboutUs, ContactUs, FutureEvents, Home, Photos } from './views';
 
 import './App.css';
 
@@ -20,10 +20,16 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li>
-            <Link to="/users">Users</Link>
+            <Link to="/photos">Photos</Link>
+          </li>
+          <li>
+            <Link to="/future-events">Future Events</Link>
+          </li>
+          <li>
+            <Link to="/contact-us">Users</Link>
           </li>
         </ul>
       </nav>
@@ -31,16 +37,16 @@ function App() {
       {/* Switch */}
       <Switch>
         <Route path="/about-us">
-          <About />
+          <AboutUs />
         </Route>
         <Route path="/photos">
-          <Users />
+          <Photos />
         </Route>
         <Route path="/future-events">
-          <Users />
+          <FutureEvents />
         </Route>
         <Route path="/contact-us">
-          <Users />
+          <ContactUs />
         </Route>
         <Route path="/">
           <Home />
