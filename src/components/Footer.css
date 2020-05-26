@@ -1,0 +1,27 @@
+.Footer__container {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 50px;
+  width: 100vw;
+  height: 21vh;
+  background: grey;
+}
+
+.Footer__follow-container {
+  position: relative;
+  top: 10px;
+  padding: 10px;
+  /* background: red; */
+  width: 300px;
+}
+
+.Footer__follow-headline {
+
+}
+
+.Footer__followBtns-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
