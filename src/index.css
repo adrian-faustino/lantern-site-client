@@ -7,9 +7,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+  /* min-height: 100%; */
+
+  background-image: url('./assets/hiroshima-bg.jpg');
+  background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-content {
+  position: relative;
+  padding: 2em 4em 0 15em;
+  left: 0;
+  width: 100vw;
+  min-height: 76vh; 
+}
+
+:root {
+  --base-grey: rgb(181, 174, 174);
+  --base-grey-fade: rgba(40, 36, 32, 0.664);
+  --base-solid-bg: rgb(85, 150, 140);
 }

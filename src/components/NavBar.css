@@ -4,6 +4,7 @@
   height: 100vh;
   z-index: 30;
   /* background: red; */
+  background-color: var(--base-solid-bg);
   box-shadow: 0 0 5px black;
   padding: 2em 1em 1em 1em;
   text-align: center;
@@ -13,11 +14,35 @@
   width: 150px;
   height: 150px;
   margin: 1em auto;
-  box-shadow: 0 0 3px black;
+  box-shadow: 0 0 6px black;
+}
+
+.NavBar__logo-container img {
+  height: 100%;
+  width: 100%;
 }
 
 
 .NavBar__headline {
   font-size: 1.2em;
   font-weight: bold;
+  color: var(--base-grey);
+}
+
+.NavBar__donateBtn {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+
+/* NavBar link on hover effects */
+a.nav-link {
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+a.nav-link:hover {
+  background: grey;
+  color: var(--base-grey);
+  transform: scale(1.2);
 }

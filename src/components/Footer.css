@@ -1,9 +1,9 @@
 .Footer__container {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  left: 12em;
-  padding: 10px 50px;
-  width: calc(100vw - 13em);
+  left: 0;
+  padding: 0 15em;
+  width: 100vw;
   height: 26vh;
   background: grey;
 }

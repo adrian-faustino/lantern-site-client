@@ -16,6 +16,8 @@ export default function NavBar() {
       
       <h2 className="NavBar__headline">Our mission statement goes here.</h2>
 
+      <hr />
+
       <Nav vertical>
         <NavItem>
         <NavLink href="/">Home</NavLink>
@@ -33,7 +35,8 @@ export default function NavBar() {
           <NavLink href="/contact-us">Contact Us</NavLink>
         </NavItem>
         <NavItem>
-          <Button color="info">Donate</Button>
+          <hr />
+          <Button className="NavBar__donateBtn" color="info">Donate</Button>
         </NavItem>
       </Nav>
     </nav>
