@@ -12,32 +12,35 @@ import { AboutUs, ContactUs, FutureEvents, Home, Photos } from './views';
 // components
 import { Footer } from './components';
 
+// react-strap
+import { Button, Nav, NavItem, NavLink } from 'reactstrap';
+
 import './App.css';
 
 function App() {
   return (
     <Router>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about-us">About Us</Link>
-          </li>
-          <li>
-            <Link to="/photos">Photos</Link>
-          </li>
-          <li>
-            <Link to="/future-events">Future Events</Link>
-          </li>
-          <li>
-            <Link to="/contact-us">Users</Link>
-          </li>
-          <li>
-            <button>Donate</button>
-          </li>
-        </ul>
+        <Nav vertical>
+          <NavItem>
+          <NavLink href="/">Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/about-us">About Us</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/photos">Photos</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/future-events">Future Events</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/contact-us">Contact Us</NavLink>
+          </NavItem>
+          <NavItem>
+            <Button color="info">Donate</Button>
+          </NavItem>
+        </Nav>
       </nav>
 
       {/* Switch */}
