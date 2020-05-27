@@ -1,6 +1,6 @@
 .NavBar__container {
   position: fixed;
-  width: 12em;
+  width: 13.5em;
   height: 100vh;
   z-index: 30;
   /* background: red; */
@@ -41,8 +41,13 @@ a.nav-link {
   font-weight: bold;
 }
 
-a.nav-link:hover {
+/* a.nav-link:hover {
   background: grey;
   color: var(--base-grey);
-  transform: scale(1.2);
+} */
+
+/* Hightlight current link */
+.nav-active {
+  background: rgba(0, 123, 255, 0.425);
+  pointer-events: none;
 }

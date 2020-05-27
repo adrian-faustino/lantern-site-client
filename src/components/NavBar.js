@@ -7,6 +7,9 @@ import { Button, Nav, NavItem, NavLink } from 'reactstrap';
 import './NavBar.css';
 
 export default function NavBar() {
+
+  let currentPath = window.location.pathname;
+
   return (
     <nav className="NavBar__container">
 
@@ -19,19 +22,19 @@ export default function NavBar() {
       <hr />
 
       <Nav vertical>
-        <NavItem>
-        <NavLink href="/">Home</NavLink>
+        <NavItem className={currentPath === '/' ? 'nav-active' : ''}>
+          <NavLink href="/">Home</NavLink>
         </NavItem>
-        <NavItem>
+        <NavItem className={currentPath === '/about-us' ? 'nav-active' : ''}>
           <NavLink href="/about-us">About Us</NavLink>
         </NavItem>
-        <NavItem>
+        <NavItem className={currentPath === '/photos' ? 'nav-active' : ''}>
           <NavLink href="/photos">Photos</NavLink>
         </NavItem>
-        <NavItem>
+        <NavItem className={currentPath === '/future-events' ? 'nav-active' : ''}>
           <NavLink href="/future-events">Future Events</NavLink>
         </NavItem>
-        <NavItem>
+        <NavItem className={currentPath === '/contact-us' ? 'nav-active' : ''}>
           <NavLink href="/contact-us">Contact Us</NavLink>
         </NavItem>
         <NavItem>
