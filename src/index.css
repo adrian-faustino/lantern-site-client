@@ -13,6 +13,8 @@ body {
 
   background-image: url('./assets/hiroshima-bg.jpg');
   background-attachment: fixed;
+
+  overflow-x: hidden;
 }
 
 code {

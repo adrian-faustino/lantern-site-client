@@ -1,0 +1,26 @@
+.AboutUs__title {
+  color: rgba(255, 255, 255, 0.776);
+  font-size: 2.5em;
+  border-bottom: 2px solid rgba(39, 84, 94, 0.529);
+}
+
+.AboutUs__headline {
+  margin: 1.6em 0 1em 0;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  background: rgba(128, 128, 128, 0.372);
+  color: rgba(0, 0, 0, 0.708);
+  font-size: 1.3em;
+}
+
+.AboutUs__p {
+  color: rgba(196, 195, 210, 0.995);
+  font-size: 1.8em;
+  width: 100%;
+}
+
+.AboutUs__p > a {
+  color: rgb(0, 115, 255);
+  text-decoration: underline;
+}

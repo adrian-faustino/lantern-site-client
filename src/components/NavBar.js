@@ -17,7 +17,7 @@ export default function NavBar() {
         <img src="https://picsum.photos/150"/>
       </div>
       
-      <h2 className="NavBar__headline">Our mission statement goes here.</h2>
+      <h2 className="NavBar__headline">Lighting up the path towards world peace.</h2>
 
       <hr />
 
